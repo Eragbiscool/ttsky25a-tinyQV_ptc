@@ -123,6 +123,8 @@ project:
     - "user_peripherals/npu/peripheral.v"
     - "user_peripherals/vga_tester/peripheral.v"
     - "user_peripherals/hamming_7_4/hamming_7_4.v"
+    - "user_peripherals/PTC/ptc_defines.v"
+    - "user_peripherals/PTC/tqvp_ptc_eragbi.v"
     - "tinyQV/cpu/tinyqv.v"
     - "tinyQV/cpu/alu.v"
     - "tinyQV/cpu/core.v"
@@ -142,8 +144,8 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "Interrupt 0"
-  ui[1]: "Interrupt 1"
+  ui[0]: "ext_clock_in"
+  ui[1]: "capture clock in"
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
@@ -158,8 +160,8 @@ pinout:
   uo[3]: ""
   uo[4]: ""
   uo[5]: ""
-  uo[6]: "Debug UART TX"
-  uo[7]: "Debug signal / PWM"
+  uo[6]: "pwm_en_out"
+  uo[7]: "PWM out"
 
   # Bidirectional pins
   uio[0]: "Flash CS"
