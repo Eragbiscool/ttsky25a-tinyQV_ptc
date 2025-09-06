@@ -42,6 +42,7 @@ USER_PERIPHERAL_38 = CORDIC.test_trigonometric_simple \
 					 CORDIC.test_hyperbolic_rotating_simple \
 					 CORDIC.test_circular_rotating_sweep_and_vis
 USER_PERIPHERAL_39 = affinex.test
+USER_PERIPHERAL_40 = ptc.test
 
 expand_tests = $(foreach num,$(1),$(USER_PERIPHERAL_$(num)))
 PERI_NUMBERS = $(shell seq 2 39)
